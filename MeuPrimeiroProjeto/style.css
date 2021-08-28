@@ -42,11 +42,6 @@ nav img{
     text-decoration: none;
     font-size: 13px;
 }
-.nav-links ul li b{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 13px;
-}
 .nav-links ul li ::after{
     content: '';
     width: 0%;
@@ -315,4 +310,30 @@ h3{
     margin: 10px 0 40px;
     font-size: 17 px;
     color: rgb(0, 0, 0)
+}
+.nav-links-history{
+    flex: 3;
+    text-align: right;
+}
+.nav-links-history ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links-history ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links-history ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #c2b433ea;
+    display: block;
+    margin: auto;
+}
+.nav-links-history ul li :hover::after{
+    width: 100%;
 }
