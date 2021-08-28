@@ -11,6 +11,12 @@
     background-size: cover;
     position: relative;
 }
+.historia{
+    min-height: 100vh;
+    width: 100%;
+    background:rgb(255, 255, 255);
+    position: relative;
+}
 nav{
     display: flex;
     padding: 2% 6%;
@@ -32,7 +38,12 @@ nav img{
     position: relative;
 }
 .nav-links ul li a{
-    color: #fff;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li b{
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 13px;
 }
@@ -49,7 +60,7 @@ nav img{
 }
 .text-box{
     width: 90%;
-    color: #fff;
+    color: rgb(255, 255, 255);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -58,6 +69,7 @@ nav img{
 }
 .text-box h1{
     font-size: 62px;
+    color: rgba(255, 255, 255, 0.7);
 }
 .text-box p{
     margin: 10px 0 40px;
@@ -80,20 +92,20 @@ nav img{
     background: #c2b433ea;
     transition: 0.8s;
 }
-nav .fa{
+nav .fas{
     display: none;
 }
 
 @media(max-width: 700px){
     .text-box h1{
-        font-size: 62px;
+        font-size: 20px;
     }
     .nav-links ul li{
         display: block;
     }
     .nav-links{
         position: absolute;
-        background: #f44336;
+        background: #000000;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -102,9 +114,9 @@ nav .fa{
         z-index: 2;
         transition: 1s;
     }
-    nav .fa{
+    nav .fas{
         display: block;
-        color: #fff;
+        color: rgb(255, 255, 255);
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -283,4 +295,24 @@ h3{
 .testimonials-col h3{
     margin-top: 15px;
     text-align: left;
+}
+
+/*---------HISTORIA----------*/
+.text-box-history{
+    width: 90%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box-history h1{
+    font-size: 62px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.text-box-history p{
+    margin: 10px 0 40px;
+    font-size: 17 px;
+    color: rgb(0, 0, 0)
 }
