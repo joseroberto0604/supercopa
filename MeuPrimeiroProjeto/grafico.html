@@ -12,7 +12,7 @@
 <section class="historia">
     <nav>
         <a href="index.html"><img src="eduford_img/logo.png" alt=""></a>
-        <div class="nav-links-history" id="navLinks">
+        <div class="nav-links" id="navLinks">
           <i class="fas fa-times" onclick="hideMenu()"></i>
              <ul>
                  <li><a href="historia.html">HISTÓRIA</a></li>
@@ -1419,14 +1419,13 @@
 </section>
 
 <script>
-
-    var navLinks = document.getElementbyId("navLinks");
-    function showMenu(){
-      navLinks.style.right = "0";
-    }
-    function hideMenu(){
-      navLinks.style.right = "-200px";
-    }
+  
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right = "0";
+  }
+  function hideMenu(){
+    navLinks.style.right = "-200px";
+  }
 
 </script>
-

@@ -117,7 +117,7 @@ nav .fas{
     }
     nav .fas{
         display: block;
-        color: rgb(255, 255, 255);
+        color: goldenrod;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -125,6 +125,32 @@ nav .fas{
     .nav-links ul{
         padding: 30px;
     }
+
+    .nav-links-craques ul li{
+        display: block;
+    }
+    .nav-links-craques{
+        position: absolute;
+        background: #000000;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .nav-links-craques .fas{
+        display: block;
+        color: goldenrod;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links-craques ul{
+        padding: 30px;
+    }
+
 }
 /*------ infos -----*/
 
