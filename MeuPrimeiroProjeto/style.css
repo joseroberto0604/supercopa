@@ -17,6 +17,12 @@
     background:rgb(255, 255, 255);
     position: relative;
 }
+.craques{
+    width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+    position: relative;
+}
 nav{
     display: flex;
     padding: 2% 6%;
@@ -167,72 +173,6 @@ h3{
     }
 }
 
-/*------ campus -----*/
-
-.campus{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-}
-.campus-col{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.campus-col img{
-    height: 100%;
-    width: 100%;
-    display: block;
-}
-.layer{
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0,5s;
-}
-.layer:hover{
-    background: rgba(0, 0, 0, 0.7);
-}
-.layer p{
-    width: 80%;
-    font-weight: 500;
-    color: rgb(184, 172, 11);
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 1s;
-    line-height: 1.5;
-}
-.layer:hover p{
-    bottom: 5%;
-    opacity: 1;
-}
-.layer h3{
-    width: 100%;
-    font-weight: 500;
-    color: rgb(187, 175, 11);
-    font-size: 30px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-}
-.layer:hover h3{
-    bottom: 70%;
-    opacity: 1;
-}
-
 /*-------- facilities ---------*/
 
 .facilities{
@@ -297,7 +237,7 @@ h3{
     width: 90%;
     color: rgb(0, 0, 0);
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -335,5 +275,140 @@ h3{
     margin: auto;
 }
 .nav-links-history ul li :hover::after{
+    width: 100%;
+}
+/*---------CRAQUES---------*/
+.text-box-craques{
+    width: 90%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box-craques h1{
+    font-size: 62px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.text-box-craques p{
+    margin: 10px 0 40px;
+    font-size: 17 px;
+    color: rgb(0, 0, 0)
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0,5s;
+}
+.layer:hover{
+    background: rgba(0, 0, 0, 0.7);
+}
+.layer p1{
+    width: 80%;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    line-height: 1.5;
+}
+.layer:hover p1{
+    bottom: 10%;
+    opacity: 1;
+}
+.layer p2{
+    width: 80%;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    line-height: 1.5;
+}
+.layer:hover p2{
+    bottom: 50%;
+    opacity: 1;
+}
+.layer h3{
+    width: 120%;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 75%;
+    opacity: 1;
+}
+.layer h4{
+    width: 80%;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h4{
+    bottom: 50%;
+    opacity: 1;
+}
+.nav-links-craques{
+    flex: 3;
+    text-align: right;
+}
+.nav-links-craques ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links-craques ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links-craques ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #c2b433ea;
+    display: block;
+    margin: auto;
+}
+.nav-links-craques ul li :hover::after{
     width: 100%;
 }

@@ -1,0 +1,66 @@
+<html>
+<head>
+   <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Craques da Supercopa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<section class="craques">
+    <nav>
+        <a href="index.html"><img src="eduford_img/logo.png" alt=""></a>
+        <div class="nav-links-craques" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+             <ul>
+                 <li><a href="historia.html">HISTÓRIA</a></li>
+                 <li><a href="grafico.html">ESTATÍSTICAS</a></li>
+                 <li><a href="">LOCAL</a></li>
+                 <li><a href="">REGRAS</a></li>
+             </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+<div class="text-box-craques">
+    <h1>Artilheiros</h1>
+    <p>Nossas duas supercopas foram marcadas por muitos gols.</p>
+    
+    <div class="row">
+        <div class="campus-col">
+            <img src="eduford_img/newyork.png">
+            <div class="layer">
+                <h3>Serejo</h3>
+                <p1>Na estreia do campeonato em 2020, balançou as redes 4 vezes e se tornou o primeiro artilheiro da supercopa de ramos.</p1>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="eduford_img/ChuteiraDeOuro.png">
+            <div class="layer">
+                <h3>Artur</h3>
+                <p2>6 gols e o título na supercopa 2021</p2>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="eduford_img/london.png">
+            <div class="layer">
+                <h4>Quem será o próximo?</h3>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<script>
+
+    var navLinks = document.getElementbyId("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+
+</script>
+
