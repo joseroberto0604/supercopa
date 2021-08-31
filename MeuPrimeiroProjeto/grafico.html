@@ -80,7 +80,7 @@
         })
       
         
-        var stepDuration = 4000;
+        var stepDuration = 2000;
         
         var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
         categoryAxis.renderer.grid.template.location = 0;
@@ -119,7 +119,7 @@
         });
     
         
-        var year = 1;
+        var year = -1;
         label.text = year.toString();
         
         var interval;
@@ -136,13 +136,15 @@
             clearInterval(interval);
           }
         }
-        
+      
+
         function nextYear() {
           year++
 
-          if (year>10){
-                year = 1;
-              }
+          if (year>12){
+            
+            year = -1;
+          }
 
 
           var newData = allData[year];
@@ -174,6 +176,250 @@
         categoryAxis.sortBySeries = series;
         
         var allData = {
+          "-1": [
+            {
+              "network": "Serejo",
+              "MAU": 0
+            },
+            {
+              "network": "Gian",
+              "MAU": 0
+            },
+            {
+              "network": "Douglas",
+              "MAU": 0
+            },
+            {
+              "network": "Fernando",
+              "MAU": 0
+            },
+            {
+              "network": "Lopes",
+              "MAU": 0
+            },
+            {
+              "network": "Marcos",
+              "MAU": 0
+            },
+            {
+              "network": "Artur",
+              "MAU": 0
+            },
+            {
+              "network": "Miguel",
+              "MAU": 0
+            },
+            {
+              "network": "Sardinha",
+              "MAU": 0
+            },
+            {
+              "network": "Dudu",
+              "MAU": 0
+            },
+            {
+              "network": "Felipe",
+              "MAU": 0
+            },
+            {
+              "network": "Orelha",
+              "MAU": 0
+            },
+            {
+              "network": "Silva",
+              "MAU": 0
+            },
+            {
+              "network": "Perygor",
+              "MAU": 0
+            },
+            {
+              "network": "Pedro",
+              "MAU": 0
+            },
+            {
+              "network": "Betinho",
+              "MAU": 0
+            },
+            {
+              "network": "Miranda",
+              "MAU": 0
+            },
+            {
+              "network": "Maikon",
+              "MAU": 0
+            },
+            {
+              "network": "Globinho",
+              "MAU": 0
+            },
+            {
+              "network": "Vinicius",
+              "MAU": 0
+            },
+            {
+              "network": "Alencar",
+              "MAU": 0
+            },
+            {
+              "network": "Antonio",
+              "MAU": 0
+            },
+            {
+              "network": "Bolo",
+              "MAU": 0
+            },
+            {
+              "network": "Renato",
+              "MAU": 0
+            },
+            {
+              "network": "Carlos",
+              "MAU": 0
+            },
+            {
+              "network": "Reis",
+              "MAU": 0
+            },
+            {
+              "network": "Thayan",
+              "MAU": 0
+            },
+            {
+              "network": "Zé",
+              "MAU": 0
+            },
+            {
+              "network": "Maciel",
+              "MAU": 0
+            },
+            {
+              "network": "Alvinho",
+              "MAU": 0
+            },
+            ],
+          "0": [
+            {
+              "network": "Serejo",
+              "MAU": 0
+            },
+            {
+              "network": "Gian",
+              "MAU": 0
+            },
+            {
+              "network": "Douglas",
+              "MAU": 0
+            },
+            {
+              "network": "Fernando",
+              "MAU": 0
+            },
+            {
+              "network": "Lopes",
+              "MAU": 0
+            },
+            {
+              "network": "Marcos",
+              "MAU": 0
+            },
+            {
+              "network": "Artur",
+              "MAU": 0
+            },
+            {
+              "network": "Miguel",
+              "MAU": 0
+            },
+            {
+              "network": "Sardinha",
+              "MAU": 0
+            },
+            {
+              "network": "Dudu",
+              "MAU": 0
+            },
+            {
+              "network": "Felipe",
+              "MAU": 0
+            },
+            {
+              "network": "Orelha",
+              "MAU": 0
+            },
+            {
+              "network": "Silva",
+              "MAU": 0
+            },
+            {
+              "network": "Perygor",
+              "MAU": 0
+            },
+            {
+              "network": "Pedro",
+              "MAU": 0
+            },
+            {
+              "network": "Betinho",
+              "MAU": 0
+            },
+            {
+              "network": "Miranda",
+              "MAU": 0
+            },
+            {
+              "network": "Maikon",
+              "MAU": 0
+            },
+            {
+              "network": "Globinho",
+              "MAU": 0
+            },
+            {
+              "network": "Vinicius",
+              "MAU": 0
+            },
+            {
+              "network": "Alencar",
+              "MAU": 0
+            },
+            {
+              "network": "Antonio",
+              "MAU": 0
+            },
+            {
+              "network": "Bolo",
+              "MAU": 0
+            },
+            {
+              "network": "Renato",
+              "MAU": 0
+            },
+            {
+              "network": "Carlos",
+              "MAU": 0
+            },
+            {
+              "network": "Reis",
+              "MAU": 0
+            },
+            {
+              "network": "Thayan",
+              "MAU": 0
+            },
+            {
+              "network": "Zé",
+              "MAU": 0
+            },
+            {
+              "network": "Maciel",
+              "MAU": 0
+            },
+            {
+              "network": "Alvinho",
+              "MAU": 0
+            },
+            ],
           "1": [
             {
               "network": "Serejo",
