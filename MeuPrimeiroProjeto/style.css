@@ -106,7 +106,7 @@ nav .fas{
     }
     .nav-links{
         position: absolute;
-        background: #000000;
+        background: black;
         height: 100vh;
         width: 200px;
         top: 0;
@@ -122,36 +122,9 @@ nav .fas{
         font-size: 22px;
         cursor: pointer;
     }
-    .nav-links ul{
-        padding: 30px;
-    }
-
-    .nav-links-craques ul li{
-        display: block;
-    }
-    .nav-links-craques{
-        position: absolute;
-        background: #000000;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-    .nav-links-craques .fas{
-        display: block;
-        color: goldenrod;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links-craques ul{
-        padding: 30px;
-    }
 
 }
+
 /*------ infos -----*/
 
 .infos{
@@ -303,6 +276,30 @@ h3{
 .nav-links-history ul li :hover::after{
     width: 100%;
 }
+
+@media(max-width: 700px){
+    .text-box-history h1{
+        font-size: 20px;
+    }
+    .nav-links-history ul li{
+        display: block;
+    }
+    .nav-links-history ul li a{
+        color: white;
+    }
+    .nav-links-history{
+        position: absolute;
+        background: black;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+}
+
 /*---------CRAQUES---------*/
 .text-box-craques{
     width: 90%;
@@ -319,8 +316,35 @@ h3{
 }
 .text-box-craques p{
     margin: 10px 0 40px;
-    font-size: 17 px;
+    font-size: 17px;
     color: rgb(0, 0, 0)
+}
+
+.nav-links-craques{
+    flex: 3;
+    text-align: right;
+}
+.nav-links-craques ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links-craques ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links-craques ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #c2b433ea;
+    display: block;
+    margin: auto;
+}
+.nav-links-craques ul li :hover::after{
+    width: 100%;
 }
 .campus-col{
     flex-basis: 32%;
@@ -412,29 +436,40 @@ h3{
     bottom: 50%;
     opacity: 1;
 }
-.nav-links-craques{
-    flex: 3;
-    text-align: right;
-}
-.nav-links-craques ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-.nav-links-craques ul li a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 13px;
-}
-.nav-links-craques ul li ::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #c2b433ea;
-    display: block;
-    margin: auto;
-}
-.nav-links-craques ul li :hover::after{
-    width: 100%;
-}
+
+@media(max-width: 700px){
+    .campus-col{
+        top: 0;
+    }
+    .row{
+        position: absolute;
+    }
+    .text-box-craques{
+        height: 550px;
+        font-size: 30px;
+    }
+    .nav-links-craques ul li{
+        display: block;
+    }
+    .nav-links-craques ul li a{
+        color: white;
+    }
+    .nav-links-craques{
+        position: absolute;
+        background: black;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fas{
+        display: block;
+        color: goldenrod;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+} 
