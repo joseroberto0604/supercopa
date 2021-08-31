@@ -75,7 +75,7 @@
             play();
           }
           else {
-            stop()
+            stop();
           }
         })
       
@@ -93,7 +93,7 @@
         valueAxis.min = 0;
         valueAxis.rangeChangeEasing = am4core.ease.linear;
         valueAxis.rangeChangeDuration = stepDuration;
-        valueAxis.extraMax = 0.1;
+        valueAxis.extraMax = 1;
         
         var series = chart.series.push(new am4charts.ColumnSeries());
         series.dataFields.categoryY = "network";
@@ -140,9 +140,9 @@
         function nextYear() {
           year++
 
-        if (year>10){
-              year = 1
-            }
+          if (year>10){
+                year = 1;
+              }
 
 
           var newData = allData[year];
@@ -155,8 +155,8 @@
           }
         
           if (year == 1) {
-            series.interpolationDuration = stepDuration / 4;
-            valueAxis.rangeChangeDuration = stepDuration / 4;
+            series.interpolationDuration = stepDuration / 2;
+            valueAxis.rangeChangeDuration = stepDuration / 2;
           }
           else {
             series.interpolationDuration = stepDuration;
@@ -165,7 +165,7 @@
               
           chart.invalidateRawData();
 
-          label.text = year.toString() + " rodada";
+          label.text = year.toString();
         
           categoryAxis.zoom({ start: 0, end: itemsWithNonZero / categoryAxis.dataItems.length });
         }
@@ -242,7 +242,7 @@
             },
             {
               "network": "Miranda",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Maikon",
@@ -254,7 +254,7 @@
             },
             {
               "network": "Vinicius",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Alencar",
@@ -308,7 +308,7 @@
             },
             {
               "network": "Douglas",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Fernando",
@@ -365,7 +365,7 @@
             },
             {
               "network": "Miranda",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Maikon",
@@ -377,7 +377,7 @@
             },
             {
               "network": "Vinicius",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Alencar",
@@ -431,7 +431,7 @@
             },
             {
               "network": "Douglas",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Fernando",
@@ -488,7 +488,7 @@
             },
             {
               "network": "Miranda",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Maikon",
@@ -500,7 +500,7 @@
             },
             {
               "network": "Vinicius",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Alencar",
@@ -554,7 +554,7 @@
             },
             {
               "network": "Douglas",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Fernando",
@@ -611,7 +611,7 @@
             },
             {
               "network": "Miranda",
-              "MAU": 0
+              "MAU": 3
             },
             {
               "network": "Maikon",
@@ -623,7 +623,7 @@
             },
             {
               "network": "Vinicius",
-              "MAU": 0
+              "MAU": 3
             },
             {
               "network": "Alencar",
