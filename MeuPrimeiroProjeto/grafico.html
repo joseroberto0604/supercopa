@@ -75,9 +75,10 @@
             play();
           }
           else {
-            stop();
+            stop()
           }
         })
+      
         
         var stepDuration = 4000;
         
@@ -138,11 +139,12 @@
         
         function nextYear() {
           year++
-        
-          if (year > 10) {
-            year = 1;
-          }
-        
+
+        if (year>10){
+              year = 1
+            }
+
+
           var newData = allData[year];
           var itemsWithNonZero = 0;
           for (var i = 0; i < chart.data.length; i++) {
@@ -162,7 +164,8 @@
           }
               
           chart.invalidateRawData();
-          label.text = year.toString();
+
+          label.text = year.toString() + " rodada";
         
           categoryAxis.zoom({ start: 0, end: itemsWithNonZero / categoryAxis.dataItems.length });
         }
@@ -202,7 +205,7 @@
             },
             {
               "network": "Miguel",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Sardinha",
@@ -313,7 +316,7 @@
             },
             {
               "network": "Lopes",
-              "MAU": 0
+              "MAU": 2
             },
             {
               "network": "Marcos",
@@ -325,7 +328,7 @@
             },
             {
               "network": "Miguel",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Sardinha",
@@ -436,11 +439,11 @@
             },
             {
               "network": "Lopes",
-              "MAU": 0
+              "MAU": 3
             },
             {
               "network": "Marcos",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Artur",
@@ -448,7 +451,7 @@
             },
             {
               "network": "Miguel",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Sardinha",
@@ -547,7 +550,7 @@
             },
             {
               "network": "Gian",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Douglas",
@@ -559,11 +562,11 @@
             },
             {
               "network": "Lopes",
-              "MAU": 0
+              "MAU": 4
             },
             {
               "network": "Marcos",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Artur",
@@ -571,7 +574,7 @@
             },
             {
               "network": "Miguel",
-              "MAU": 0
+              "MAU": 2
             },
             {
               "network": "Sardinha",
@@ -584,7 +587,7 @@
             },
             {
               "network": "Felipe",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Orelha",
@@ -670,11 +673,11 @@
             },
             {
               "network": "Gian",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Douglas",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Fernando",
@@ -682,19 +685,19 @@
             },
             {
               "network": "Lopes",
-              "MAU": 0
+              "MAU": 4
             },
             {
               "network": "Marcos",
-              "MAU": 0
-            },
-            {
-              "network": "Miguel",
-              "MAU": 0
+              "MAU": 2
             },
             {
               "network": "Artur",
               "MAU": 0
+            },
+            {
+              "network": "Miguel",
+              "MAU": 2
             },
             {
               "network": "Sardinha",
@@ -707,7 +710,7 @@
             },
             {
               "network": "Felipe",
-              "MAU": 0
+              "MAU": 2
             },
             {
               "network": "Orelha",
@@ -731,7 +734,7 @@
             },
             {
               "network": "Miranda",
-              "MAU": 0
+              "MAU": 3
             },
             {
               "network": "Maikon",
@@ -743,7 +746,7 @@
             },
             {
               "network": "Vinicius",
-              "MAU": 0
+              "MAU": 4
             },
             {
               "network": "Alencar",
@@ -793,11 +796,11 @@
             },
             {
               "network": "Gian",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Douglas",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Fernando",
@@ -805,11 +808,11 @@
             },
             {
               "network": "Lopes",
-              "MAU": 0
+              "MAU": 4
             },
             {
               "network": "Marcos",
-              "MAU": 0
+              "MAU": 2
             },
             {
               "network": "Artur",
@@ -817,7 +820,7 @@
             },
             {
               "network": "Miguel",
-              "MAU": 0
+              "MAU": 2
             },
             {
               "network": "Sardinha",
@@ -830,7 +833,7 @@
             },
             {
               "network": "Felipe",
-              "MAU": 0
+              "MAU": 2
             },
             {
               "network": "Orelha",
@@ -854,7 +857,7 @@
             },
             {
               "network": "Miranda",
-              "MAU": 0
+              "MAU": 3
             },
             {
               "network": "Maikon",
@@ -866,7 +869,7 @@
             },
             {
               "network": "Vinicius",
-              "MAU": 1
+              "MAU": 5
             },
             {
               "network": "Alencar",
@@ -916,11 +919,11 @@
             },
             {
               "network": "Gian",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Douglas",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Fernando",
@@ -928,11 +931,11 @@
             },
             {
               "network": "Lopes",
-              "MAU": 0
+              "MAU": 4
             },
             {
               "network": "Marcos",
-              "MAU": 0
+              "MAU": 2
             },
           {
               "network": "Artur",
@@ -940,7 +943,7 @@
             },
             {
               "network": "Miguel",
-              "MAU": 2
+              "MAU": 4
             },
             {
               "network": "Sardinha",
@@ -953,7 +956,7 @@
             },
             {
               "network": "Felipe",
-              "MAU": 1
+              "MAU": 3
             },
             {
               "network": "Orelha",
@@ -977,7 +980,7 @@
             },
             {
               "network": "Miranda",
-              "MAU": 0
+              "MAU": 3
             },
             {
               "network": "Maikon",
@@ -989,7 +992,7 @@
             },
             {
               "network": "Vinicius",
-              "MAU": 1
+              "MAU": 5
             },
             {
               "network": "Alencar",
@@ -1039,11 +1042,11 @@
             },
             {
               "network": "Gian",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Douglas",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Fernando",
@@ -1051,11 +1054,11 @@
             },
             {
               "network": "Lopes",
-              "MAU": 0
+              "MAU": 4
             },
             {
               "network": "Marcos",
-              "MAU": 0
+              "MAU": 2
             },
           {
               "network": "Artur",
@@ -1063,7 +1066,7 @@
             },
             {
               "network": "Miguel",
-              "MAU": 2
+              "MAU": 4
             },
             {
               "network": "Sardinha",
@@ -1076,7 +1079,7 @@
             },
             {
               "network": "Felipe",
-              "MAU": 1
+              "MAU": 3
             },
             {
               "network": "Orelha",
@@ -1100,7 +1103,7 @@
             },
             {
               "network": "Miranda",
-              "MAU": 1
+              "MAU": 4
             },
             {
               "network": "Maikon",
@@ -1112,7 +1115,7 @@
             },
             {
               "network": "Vinicius",
-              "MAU": 1
+              "MAU": 5
             },
             {
               "network": "Alencar",
@@ -1162,11 +1165,11 @@
             },
             {
               "network": "Gian",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Douglas",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Fernando",
@@ -1174,11 +1177,11 @@
             },
             {
               "network": "Lopes",
-              "MAU": 0
+              "MAU": 4
             },
             {
               "network": "Marcos",
-              "MAU": 0
+              "MAU": 2
             },
           {
               "network": "Artur",
@@ -1186,7 +1189,7 @@
             },
             {
               "network": "Miguel",
-              "MAU": 3
+              "MAU": 5
             },
             {
               "network": "Sardinha",
@@ -1198,7 +1201,7 @@
             },
             {
               "network": "Felipe",
-              "MAU": 1
+              "MAU": 3
             },
             {
               "network": "Orelha",
@@ -1222,7 +1225,7 @@
             },
             {
               "network": "Miranda",
-              "MAU": 2
+              "MAU": 5
             },
             {
               "network": "Maikon",
@@ -1234,7 +1237,7 @@
             },
             {
               "network": "Vinicius",
-              "MAU": 1
+              "MAU": 5
             },
             {
               "network": "Alencar",
@@ -1284,11 +1287,11 @@
             },
             {
               "network": "Gian",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Douglas",
-              "MAU": 0
+              "MAU": 1
             },
             {
               "network": "Fernando",
@@ -1296,11 +1299,11 @@
             },
             {
               "network": "Lopes",
-              "MAU": 0
+              "MAU": 4
             },
             {
               "network": "Marcos",
-              "MAU": 0
+              "MAU": 2
             },
           {
               "network": "Artur",
@@ -1308,7 +1311,7 @@
             },
             {
               "network": "Miguel",
-              "MAU": 5
+              "MAU": 7
             },
             {
               "network": "Sardinha",
@@ -1320,7 +1323,7 @@
             },
             {
               "network": "Felipe",
-              "MAU": 4
+              "MAU": 6
             },
             {
               "network": "Orelha",
@@ -1344,7 +1347,7 @@
             },
             {
               "network": "Miranda",
-              "MAU": 2
+              "MAU": 5
             },
             {
               "network": "Maikon",
@@ -1356,7 +1359,7 @@
             },
             {
               "network": "Vinicius",
-              "MAU": 1
+              "MAU": 5
             },
             {
               "network": "Alencar",
@@ -1403,11 +1406,12 @@
         }
         
         chart.data = JSON.parse(JSON.stringify(allData[year]));
-        categoryAxis.zoom({ start: 0, end: 1 / chart.data.length });
+        categoryAxis.zoom({ start: 0, end: 1 / chart.data.length});
         
         series.events.on("inited", function() {
           setTimeout(function() {
-            playButton.isActive = true; // this starts interval
+            playButton.isActive = true;
+             // this starts interval
           }, 0)
         })
         
