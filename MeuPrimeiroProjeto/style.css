@@ -14,8 +14,7 @@
 .historia{
     min-height: 100vh;
     width: 100%;
-    background:rgb(255, 255, 255);
-    position: relative;
+    background:radial-gradient(rgba(185, 159, 9, 0), rgba(3, 0, 0, 0.877)), url(eduford_img/fund.jpg);
 }
 .craques{
     width: 100%;
@@ -95,6 +94,12 @@ nav img{
 }
 nav .fas{
     display: none;
+}
+
+@media(max-width: 700px){
+    nav img{
+        width: 55%;
+    }
 }
 
 @media(max-width: 700px){
@@ -305,7 +310,7 @@ h3{
     width: 90%;
     color: rgb(0, 0, 0);
     position: absolute;
-    top: 70%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
